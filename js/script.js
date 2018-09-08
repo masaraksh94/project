@@ -3,7 +3,8 @@ window.addEventListener('DOMContentLoaded', () => {
 		modal = document.querySelector('.popup_engineer'),
 		closeBtnCall = document.getElementsByClassName('popup_close')[0],
 		closeBtn = document.getElementsByClassName('popup_close')[1],
-		phoneLink = document.querySelector('.phone_link'),
+		phoneLinkHeader = document.getElementsByClassName('phone_link')[0],
+		phoneLinkFooter = document.getElementsByClassName('phone_link')[1],
 		popup = document.querySelector('.popup');
 
 	//modal
@@ -26,7 +27,9 @@ window.addEventListener('DOMContentLoaded', () => {
 	};
 
 	call(headerBtn, closeBtn, modal);
-	call(phoneLink, closeBtnCall, modal);
+	call(phoneLinkHeader, closeBtnCall, modal);
+	call(phoneLinkFooter, closeBtnCall, modal);
+
 
     setTimeout("document.querySelector('.popup_engineer').style.display='block'", 60000);
 
