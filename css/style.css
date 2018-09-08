@@ -405,10 +405,10 @@ textarea:focus {
 .glazing_price_btn {
   padding: 2rem 2rem;
 }
-.glazing .aluminum .material,
-.glazing .plastic .material,
-.glazing .french .material,
-.glazing .rise .material {
+.glazing .aluminum,
+.glazing .plastic,
+.glazing .french,
+.glazing .rise {
   display: none;
 }
 .glazing a.active {
@@ -879,11 +879,6 @@ textarea:focus {
   margin-top: 1rem;
   padding: 1rem 5rem;
 }
-
-.message {
-  color: black;
-}
-
 /*Media*/
 @media (max-width: 1400px) {
   .main {
